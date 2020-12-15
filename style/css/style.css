@@ -1,0 +1,38 @@
+html {
+    font-size: small;
+}
+
+body {
+    /* Layout background images */
+    background-image: url("../images/layout.jpg");
+    /* font for the page */
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vh;
+    height: 90vh;
+    min-width: 300px;
+    min-height: 100vh;
+}
+.page {
+    background-color: transparent;
+    height: 90vh;
+    width: 90vw;
+    overflow: auto;
+}
+
+.container {
+    height: 100%;
+    width: 35%;
+    background-color: white;
+    min-width: 300px;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.container .main-display{
+    color: grey;
+    font-size: 1.25vw;
+    padding-right: 15px;
+}
