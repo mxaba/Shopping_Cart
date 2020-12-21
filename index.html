@@ -2,56 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- jQuery for button hover function -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-    <title>Shopping Cart</title>
+    <title>Zaio Color Cart</title>
 </head>
 
-<body>
-<!-- Entire Page Container -->
-<div class="entire-page">
-    <div class="container" id="page-container" tabindex="-1">
-        <!-- Heading -->
+<body id="body-style">
+<div class="page">
+    <div class="container" tabindex="-1">
         <h1 id="item-name">HICKIES Originals</h1>
-
-        <!-- Rating Stars-->
-        <div class="row row-layout">
+        <div class="row layout">
             <div class="col-sm-3">
-                <div class="container-rules col-align" >
-                <div class="fa fa-star" id="star1"  onMouseOver="this.style.cursor='pointer';" onclick="add(this,1)"></div>
-                <div class="fa fa-star" id="star2"  onMouseOver="this.style.cursor='pointer';" onclick="add(this,2)"></div>
-                <div class="fa fa-star" id="star3"  onMouseOver="this.style.cursor='pointer';" onclick="add(this,3)"></div>
-                <div class="fa fa-star" id="star4"  onMouseOver="this.style.cursor='pointer';" onclick="add(this,4)"></div>
-                <div class="fa fa-star" id="star5"  onMouseOver="this.style.cursor='pointer';" onclick="add(this,5)"></div>
+                <div class="col-align" >
+                <div class="fa fa-star"></div>
+                <div class="fa fa-star"></div>
+                <div class="fa fa-star"></div>
+                <div class="fa fa-star"></div>
+                <div class="fa fa-star"></div>
                 </div>
             </div>
 
             <div class="col-sm-1"></div>
-            <div class="col-sm-8 col-align"><h2 class='main-display' id="item-rating">1 294 Reviews</h2></div>
-        </div> <!-- End Rating Section -->
+            <div class="col-sm-8 col-align">
+                <h2 class='main' id="item-rating">1,293 Reviews</h2>
+            </div>
+        </div>
 
-        <!-- Price Attributes-->
-        <div class="row row-layout">
-            <div class="col-sm-3 col-align"><h2 class='main-display' id="discounted-price">R </h2></div>
-            <div class="col-sm-3 col-align"><h2 class='main-display' id="no-discount-price"> R </h2></div>
-            <div class="col-sm-6 col-align"><h2 id="discount" class="main-display container-rules"> 25% OFF </h2></div>
-        </div> <!-- End Price Attributes-->
+        <div class="row layout">
+            <div class="col-sm-3 col-align">
+                <h2 class='main' id="discounted">$ </h2>
+            </div>
+            <div class="col-sm-3 col-align">
+                <h3 class='main' id="no-discount">   $ </h3></div>
+            <div class="col-sm-6 col-align"><h3 id="discount" class="main"> 25% OFF </h3>
+            </div>
+        </div>
 
-        <div class="row-layout"><h2 class="main-display" id="item-offer">ONLINE EXCLUSIVE</h2></div>
+        <div class="layout">
+            <h2 class="main" style="color: black;" >ONLINE EXCLUSIVE</h2>
+        </div>
 
-        <!-- Color Selector Text-->
-        <div class="row row-layout">
-            <span> <p1 class="main-display" style="color: black;font-weight: bold">COLOUR:</p1></span>
-            <span> <p2 class="main-display" id="colour-changer">   Select A Colour</p2></span>
-        </div> <!-- End Color Selector Text-->
+        <div class="row layout">
+            <span> <p1 class="main" style="color: black;font-weight: bold">COLOUR:</p1></span>
+            <span> <p2 class="main" id="colour-changer" style="color: black;">   Select A Colour</p2></span>
+        </div>
 
         <!-- Color Palette-->
         <div class="colour-container">
@@ -68,10 +63,10 @@
                 <div class="col-1 col-sm-1"><button id="btn-8" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1"><button id="btn-9" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1"><button id="btn-10" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-11" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
             </div>
 
             <div class="row btn-row">
+                <div class="col-1 col-sm-1"><button id="btn-11" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1"><button id="btn-12" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1"><button id="btn-13" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1"><button id="btn-14" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
@@ -81,16 +76,16 @@
             </div>
         </div> <!-- End Color Palette-->
 
-        <div class="row row-layout">
-            <a href="pdf/footwear-sizing-tool.pdf" target="_blank" style="text-decoration : none"><h3 class="main-display secondary-display">Size Guide</h3></a>
+        <div class="row layout">
+            <a href="pdf/footwear-sizing-tool.pdf" target="_blank" style="text-decoration : none"><h3 class="main secondary-display">Size Guide</h3></a>
         </div>
 
-        <div class="row row-layout">
-            <h3 class="main-display secondary-display">Your Custom Fit</h3>
+        <div class="row layout">
+            <h3 class="main secondary-display">Your Custom Fit</h3>
         </div>
 
         <!-- Add to Cart Button-->
-        <div class="row row-layout">
+        <div class="row layout">
             <span class="badge"><h3 class="secondary-display" id="cart-quantity">0</h3></span>
             <span><button disabled id="add-to-cart" onclick="colorSelected()" type="button" class="btn btn-primary cart-submission" data-toggle="modal" data-target="#CartModalCenter">Add To Cart</button></span>
         </div>  <!-- End to Cart Button-->
@@ -104,24 +99,23 @@
         </div><!-- End Order Details -->
 
         <!-- Order Total and Check out -->
-        <div id="total-order" class="row row-layout" style="display: none">
-            <span> <p1 class="main-display" style="color: black;font-weight: bold;padding-left:0px">Total:</p1></span>
-            <span> <p2 class="main-display" id="total-price"style="font-weight: bold;color: indianred">Total Price</p2></span>
+        <div id="total-order" class="row layout" style="display: none">
+            <span> <p1 class="main" style="color: black;font-weight: bold;padding-left:0px">Total:</p1></span>
+            <span> <p2 class="main" id="total-price"style="font-weight: bold;color: indianred">Total Price</p2></span>
             <span><button id="btn-checkout" type="button" onclick="populateCheckoutModal()" class="btn btn-primary cart-submission" data-toggle="modal" data-target="#CheckoutModal">Checkout</button></span>
         </div>
         <!-- End Order Total and Check out -->
         <div><hr/></div>
 
-        <div class="row row-layout"><h3 class="secondary-display" style="font-weight: bold;cursor: pointer" data-toggle="modal" data-target="#HelpModalLong">Need Help?</h3></div>
-        <div class="row row-layout"><a href="https://secure.takealot.com/help#delivery" target="_blank" style="text-decoration : none"><h3 class="secondary-display" style="font-weight: bold">Shipping & Returns</h3></a></div>
+        <div class="row layout"><h3 class="secondary-display" style="font-weight: bold;cursor: pointer" data-toggle="modal" data-target="#HelpModalLong">Need Help?</h3></div>
+        <div class="row layout"><a href="https://secure.takealot.com/help#delivery" target="_blank" style="text-decoration : none"><h3 class="secondary-display" style="font-weight: bold">Shipping & Returns</h3></a></div>
 
     </div> <!-- End Page Container -->
 
-    <script src="js/starRating.js"></script>
-    <script src="js/shoppingCart.js"></script>
-    <script src="js/colourPalette.js"></script>
-    <script src="js/addToCart.js"></script>
-    <script src="js/orderDetails.js"></script>
+    <script src="style/js/shoppingCart.js"></script>
+    <script src="style/js/colourPalette.js"></script>
+    <script src="style/js/addToCart.js"></script>
+    <script src="style/js/orderDetails.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -136,13 +130,13 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="main-display" id="CartModalLongTitle">Add the quantity of the item you have selected</h5>
+                    <h5 class="main" id="CartModalLongTitle">Add the quantity of the item you have selected</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row row-layout">
+                    <div class="row layout">
                         <div class="col-6 col-sm-6"><p1 class="secondary-display" id="modal-colour-selection">Selected Colour</p1></div>
                         <div class="col-6 col-sm-6">
                             <div class="row">
@@ -167,16 +161,16 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content smallModal ">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center main-display" id="Continue-CheckoutTitle">Thank you for your order!</h5>
+                    <h5 class="modal-title text-center main" id="Continue-CheckoutTitle">Thank you for your order!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row row-layout">
+                    <div class="row layout">
                         <div  class="col-12 col-sm-12"><button id="continue-shopping" type="button" data-dismiss="modal" class="btn btn-primary cart-submission shopping-option">Continue Shopping</button></div>
                     </div>
-                    <div class="row row-layout">
+                    <div class="row layout">
                         <div class="col-12 col-sm-12"><button id="checkout" type="button" class="btn  btn-primary cart-submission shopping-option" data-toggle="modal" data-target="#CheckoutModal" onclick="populateCheckoutModal()" data-dismiss="modal">Checkout</button></div>
                     </div>
                 </div>
@@ -189,7 +183,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-lg">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center main-display" id="CheckoutTitle" style="font-weight: bold">Your Shopping Cart</h5>
+                    <h5 class="modal-title text-center main" id="CheckoutTitle" style="font-weight: bold">Your Shopping Cart</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -197,7 +191,7 @@
 
                 <div id="CheckoutModalBody" class="modal-body">
                     <div id="cart-summary-titles">
-                        <div  class="row row-layout checkout-cart">
+                        <div  class="row layout checkout-cart">
                             <div class="col-5 col-sm-5"><h3 class="secondary-display" >Item</h3></div>
                             <div class="col-2 col-sm-2"><h3 class="secondary-display" >Price</h3></div>
                             <div class="col-1 col-sm-1"></div>
@@ -213,12 +207,12 @@
             </div>
 
             <div class="modal-body">
-                <div class="row row-layout" style="margin-top: -40px">
+                <div class="row layout" style="margin-top: -40px">
                     <div class="col-9 col-sm-9"></div>
                     <div class="col-3 col-sm-3"><h3 id="cartTotal" style="font-weight: bold;color: indianred;font-size: 25px;position: relative;left:-20px" >Total</h3></div>
                 </div>
 
-                <div class="row row-layout checkout-cart">
+                <div class="row layout checkout-cart">
                     <div class="col-6 col-sm-6"><button type="button" data-dismiss="modal" class="btn btn-primary cart-submission cart-summary">Continue Shopping</button></div>
                     <div class="col-6 col-sm-6"><button type="button" class="btn  btn-primary cart-submission cart-summary" onclick="reloadPage()">Checkout</button></div>
                 </div>
@@ -235,7 +229,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title main-display" id="HelpModalLongTitle" style="font-weight: bold">Help</h5>
+                    <h5 class="modal-title main" id="HelpModalLongTitle" style="font-weight: bold">Help</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
