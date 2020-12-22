@@ -111,7 +111,8 @@
                 <h3 class="secondary" id="quantity">0</h3>
             </span>
             <span>
-                <button disabled id="add-to-cart" onclick="colorSelected()" type="button" class="btn btn-primary cart-submission" data-toggle="modal" data-target="#CartModalCenter">Add To Cart</button>
+                <button id="btn-checkout" type="button" onclick="populateCheckoutModal()" class="btn-primary cart-submission" data-toggle="modal" data-target="#CheckoutModal">Checkout</button>
+                <button id="add-to-cart" onclick="colorSelected()" type="button" class="btn-primary cart-submission" data-toggle="modal" data-target="#CartModalCenter">Add To Cart</button>
             </span>
         </div> 
 
@@ -124,8 +125,7 @@
 
         <div id="total-order" class="row layout" style="display: none">
             <span> <p1 class="main" style="color: black; padding-left:0px"><b>Total:</b></p1></span>
-            <span> <p2 class="main" id="total-price"style="color: indianred"><b>Total Price</b></p2></span>
-            <span><button id="btn-checkout" type="button" onclick="populateCheckoutModal()" class="btn btn-primary cart-submission" data-toggle="modal" data-target="#CheckoutModal">Checkout</button></span>
+            <span> <p2 class="main" id="total-price"style="color: rgb(194, 79, 79)"></p2></span>
         </div>
         <div><hr/></div>
 
