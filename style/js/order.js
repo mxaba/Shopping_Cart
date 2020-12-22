@@ -33,7 +33,7 @@ function getOrderObject(findcolor){
     }
 }
 
-function addToOrder() {
+function addOrder() {
 
     let itemcolor = document.getElementById('color-change').innerText;
     let itemQuantity = parseInt(document.getElementById('add-quantity').innerText);
@@ -49,10 +49,10 @@ function addToOrder() {
         setQuantity();
         populateOrderList();
         updateTotal(itemPrice,itemQuantity);
-        disableAddToCart();
+        disableAddCart();
     } else {
         console.log("No Item")
-        disableAddToCart();
+        disableAddCart();
     }
 }
 

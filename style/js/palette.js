@@ -1,28 +1,28 @@
 const itemcolors = [
-    'indianred',
-    'blueviolet',
-    'blue',
+    'yellowgreen',
+    'red',
+    'peru',
     'white',
-    'yellow',
-    'orange',
-    'brown',
+    'seashell',
+    'olive',
     'black',
-    'purple',
-    'lightcoral',
-    'white',
-    'indigo',
-    'silver',
-    'steelblue',
-    'pink',
-    'sandybrown',
-    'gold'
+    'aqua',
+    'gold',
+    'powderblue',
+    'whitesmoke',
+    'salmon',
+    'darkorchid',
+    'burlywood',
+    'hotpink',
+    'maroon',
+    'slategray'
 ];
 
 function initialiseItemcolors(){
     let tempJson = getItemDetails();
     for(let i=0;i<itemcolors.length;i++){
-        document.getElementById('btn_'+i).style.backgroundColor = itemcolors[i];
-        document.getElementById('btn_'+i).id = tempJson.colors[itemcolors[i]]['display-name'];
+        document.getElementById('btn_' + i).style.backgroundColor = itemcolors[i];
+        document.getElementById('btn_' + i ).id = tempJson.colors[itemcolors[i]]['display-name'];
     }
     document.getElementById(tempJson.colors[itemcolors[0]]['display-name']).focus();
     colorChanger(tempJson.colors[itemcolors[0]]['display-name']);

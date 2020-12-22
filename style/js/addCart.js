@@ -13,13 +13,13 @@ function enableAddToCart(){
     }
 }
 
-function disableAddToCart(){
+function disableAddCart(){
     document.getElementById('add-to-cart').hidden = true;
     document.getElementById('btn-checkout').hidden = false;
     document.getElementById('color-change').innerText = 'Select A color';
 }
 
-function incrementQuantity(){
+function increment(){
     let quantity = document.getElementById("add-quantity").innerHTML;
     document.getElementById("add-quantity").innerHTML = ++quantity;
     document.getElementById("qnty-accept").disabled = false;
@@ -27,7 +27,7 @@ function incrementQuantity(){
 
 }
 
-function decrementQuantity(){
+function decrement(){
     let quantity = document.getElementById("add-quantity").innerHTML;
     if(quantity>0){
         document.getElementById("add-quantity").innerHTML = --quantity;

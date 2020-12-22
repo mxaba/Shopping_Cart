@@ -91,8 +91,6 @@
                     <button id="btn_15" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle  "></button></div>
                 <div class="col-1 col-sm-1">
                     <button id="btn_16" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1">
-                    <button id="btn_17" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
             </div>
         </div>
 
@@ -142,7 +140,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<script type="text/javascript">initialisePage();</script>
+<script type="text/javascript">initialisePrices();</script>
     <div class="modal fade" id="CartModalCenter" tabindex="-1" role="dialog" aria-labelledby="CartModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -157,17 +155,17 @@
                         <div class="col-6 col-sm-6"><p1 class="secondary" id="modal-colour-selection">Selected Colour</p1></div>
                         <div class="col-6 col-sm-6">
                             <div class="row">
-                                <div class="col-4 col-sm-4"><button onclick="decrementQuantity()" style="background-image: url('style/images/minus.jpg');" type="button" class="btn-default btn-quantity" style="position: relative;left: -10px"></button></div>
+                                <div class="col-4 col-sm-4"><button onclick="decrement()" style="background-image: url('style/images/minus.jpg');" type="button" class="btn-quantity" style="position: relative; left: -12px"></button></div>
                                 <div class="col-4 col-sm-4"><p1  id='add-quantity' class="secondary" style="position: relative;left: 10px;padding: 0px 5px 0px 5px">0</p1></div>
-                                <div class="col-4 col-sm-4"><button onclick="incrementQuantity()" style="background-image: url('style/images/plus.jpg');" type="button" class="btn-default btn-quantity" style="position: relative;left: -10px"></button></div>
+                                <div class="col-4 col-sm-4"><button onclick="increment()" style="background-image: url('style/images/plus.jpg');" type="button" class="btn-quantity" style="position: relative; left: -12px"></button></div>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button id="qnty-accept" onclick='addToOrder()' data-dismiss="modal" type="button" class="btn btn-success">Agree</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="disableAddToCart()">Cancel</button>
+                    <button id="qnty-accept" onclick='addOrder()' data-dismiss="modal" type="button" class="btn" style="background-color: lightgreen;"><b>Agree</b></button>
+                    <button type="button" class="btn"  style="background-color: rgb(236, 143, 143);" data-dismiss="modal" onclick="disableAddCart()"><b>Cancel</b></button>
                 </div>
             </div>
         </div>
@@ -177,7 +175,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-lg">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center main" id="CheckoutTitle"><b>Your Shopping Cart</b></h5>
+                    <h5 class="modal-title text-center main" id="CheckoutTitle"><b>Your Shopping list</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -186,10 +184,10 @@
                 <div id="CheckoutModalBody" class="modal-body">
                     <div id="cart-summary-titles">
                         <div  class="row layout checkout-cart">
-                            <div class="col-5 col-sm-5"><h3 class="secondary" >Item</h3></div>
+                            <div class="col-5 col-sm-5"><h3 class="secondary" >Item-Name</h3></div>
                             <div class="col-2 col-sm-2"><h3 class="secondary" >Price</h3></div>
                             <div class="col-1 col-sm-1"></div>
-                            <div class="col-1 col-sm-1"><h3 class="secondary" >#</h3></div>
+                            <div class="col-1 col-sm-1"><h3 class="secondary" >qty</h3></div>
                             <div class="col-3 col-sm-3"><h3 class="secondary" >Total</h3></div>
                         </div>
                     </div>

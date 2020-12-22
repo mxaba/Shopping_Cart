@@ -5,72 +5,72 @@ const itemDetails = {
     "actualPrice": 19.99,
     "discountValue": "25% OFF",
     "colors": {
-        "indianred": {
-            "display-name": "Indian Red",
+        "yellowgreen": {
+            "display-name": "Yellowgreen",
             "price": 14.99
         },
-        "blueviolet": {
-            "display-name": "Blue Violet",
+        "red": {
+            "display-name": "Red",
             "price": 20.99
         },
-        "blue": {
-            "display-name": "Blue",
+        "peru": {
+            "display-name": "Peru",
             "price": 15.99
         },
         "white": {
             "display-name": "White",
             "price": 19.01
         },
-        "yellow": {
-            "display-name": "Yellow",
+        "seashell": {
+            "display-name": "Seashell",
             "price": 18.99
         },
-        "orange": {
-            "display-name": "Orange",
+        "olive": {
+            "display-name": "Olive",
             "price": 21.99
-        },
-        "brown": {
-            "display-name": "Brown",
-            "price": 14.99
         },
         "black": {
             "display-name": "Black",
             "price": 14.99
         },
-        "purple": {
-            "display-name": "Purple",
-            "price": 22.99
-        },
-        "lightcoral": {
-            "display-name": "Light Coral",
-            "price": 24.99
-        },
-        "white": {
-            "display-name": "White",
-            "price": 12.01
-        },
-        "indigo": {
-            "display-name": "Indigo",
-            "price": 24.99
-        },
-        "silver": {
-            "display-name": "Silver",
-            "price": 29.99
-        },
-        "steelblue": {
-            "display-name": "Steel Blue",
-            "price": 19.99
-        },
-        "pink": {
-            "display-name": "Pink",
-            "price": 14.99
-        },
-        "sandybrown": {
-            "display-name": "Sandy Brown",
+        "aqua": {
+            "display-name": "Aqua",
             "price": 14.99
         },
         "gold": {
             "display-name": "Gold",
+            "price": 22.99
+        },
+        "powderblue": {
+            "display-name": "Powder-Blue",
+            "price": 24.99
+        },
+        "whitesmoke": {
+            "display-name": "White Smoke",
+            "price": 12.01
+        },
+        "salmon": {
+            "display-name": "Salmon",
+            "price": 24.99
+        },
+        "darkorchid": {
+            "display-name": "Darkorchid",
+            "price": 29.99
+        },
+        "burlywood": {
+            "display-name": "Burlywood",
+            "price": 19.99
+        },
+        "hotpink": {
+            "display-name": "Hotpink",
+            "price": 14.99
+        },
+        "maroon": {
+            "display-name": "Maroon",
+            "price": 14.99
+        },
+        "slategray": {
+            "display-name": "Slategray",
             "price": 49.99
         },
     }
@@ -80,7 +80,7 @@ function getItemDetails() {
     return itemDetails;
 }
 
-function initialisePage(){
+function initialisePrices(){
     let itemPrice = document.getElementById('discounted');
     let itemActualPrice = document.getElementById('no-discount');
     let itemDiscount = document.getElementById('discount');
