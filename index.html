@@ -35,155 +35,149 @@
             </div>
             <div class="col-sm-3 col-align">
                 <h3 class='main' id="no-discount">   $ </h3></div>
-            <div class="col-sm-6 col-align"><h3 id="discount" class="main"> 25% OFF </h3>
+            <div class="col-sm-6 col-align">
+                <h3 id="discount" class="main"> 25% OFF </h3>
             </div>
         </div>
 
         <div class="layout">
-            <h2 class="main" style="color: black;" >ONLINE EXCLUSIVE</h2>
+            <h2 class="main" style="color: black;"> ONLINE EXCLUSIVE </h2>
         </div>
 
         <div class="row layout">
-            <span> <p1 class="main" style="color: black;font-weight: bold">COLOUR:</p1></span>
-            <span> <p2 class="main" id="colour-changer" style="color: black;">   Select A Colour</p2></span>
+            <span> 
+                <p1 class="main" style="color: black;font-weight: bold">COLOUR:</p1>
+            </span>
+            <span> 
+                <p2 class="main" id="color-change" style="color: black;">   Select A Colour</p2>
+            </span>
         </div>
-
-        <!-- Color Palette-->
-        <div class="colour-container">
+        <div class="container-color">
             <div class="row btn-row">
-                <!-- Buttons -->
-                <div class="col-1 col-sm-1"><button id="btn-0" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-1" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-2" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-3" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-4" onclick="changeColour(this.id)"  type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-5" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-6" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-7" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-8" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-9" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-10" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_0" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_1" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_2" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_3" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_4" onclick="colorChanger(this.id)"  type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_5" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_6" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_7" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_8" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_9" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_10" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
             </div>
 
             <div class="row btn-row">
-                <div class="col-1 col-sm-1"><button id="btn-11" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-12" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-13" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-14" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-15" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle  "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-16" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
-                <div class="col-1 col-sm-1"><button id="btn-17" onclick="changeColour(this.id)" type="button" class="btn btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_11" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_12" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_13" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_14" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_15" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle  "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_16" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                <div class="col-1 col-sm-1">
+                    <button id="btn_17" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
             </div>
-        </div> <!-- End Color Palette-->
-
-        <div class="row layout">
-            <a href="pdf/footwear-sizing-tool.pdf" target="_blank" style="text-decoration : none"><h3 class="main secondary-display">Size Guide</h3></a>
         </div>
 
         <div class="row layout">
-            <h3 class="main secondary-display">Your Custom Fit</h3>
+            <a href="#" target="_blank">
+                <h3 class="main secondary">Size Guide</h3>
+            </a>
         </div>
 
-        <!-- Add to Cart Button-->
         <div class="row layout">
-            <span class="badge"><h3 class="secondary-display" id="cart-quantity">0</h3></span>
-            <span><button disabled id="add-to-cart" onclick="colorSelected()" type="button" class="btn btn-primary cart-submission" data-toggle="modal" data-target="#CartModalCenter">Add To Cart</button></span>
-        </div>  <!-- End to Cart Button-->
+            <h3 class="main secondary">Your Custom Fit</h3>
+        </div>
+
+        <div class="row layout">
+            <span class="badge">
+                <h3 class="secondary" id="quantity">0</h3>
+            </span>
+            <span>
+                <button disabled id="add-to-cart" onclick="colorSelected()" type="button" class="btn btn-primary cart-submission" data-toggle="modal" data-target="#CartModalCenter">Add To Cart</button>
+            </span>
+        </div> 
 
         <div><hr/></div>
 
-        <!-- Order Details - I.E Quantity -->
-        <div id="details"><h3 class="secondary-display" style="font-weight: bold;padding-top: 5px">DETAILS</h3></div>
-        <div id='dynamic-row' class="row row-order"> <!-- Empty row where buttons are dynamically added-->
+        <div id="details">
+            <h3 class="secondary" style="padding-top: 5px"><b>DETAILS</b></h3>
+        </div>
+        <div id='dynamic-row' class="row row-order"></div>
 
-        </div><!-- End Order Details -->
-
-        <!-- Order Total and Check out -->
         <div id="total-order" class="row layout" style="display: none">
-            <span> <p1 class="main" style="color: black;font-weight: bold;padding-left:0px">Total:</p1></span>
-            <span> <p2 class="main" id="total-price"style="font-weight: bold;color: indianred">Total Price</p2></span>
+            <span> <p1 class="main" style="color: black; padding-left:0px"><b>Total:</b></p1></span>
+            <span> <p2 class="main" id="total-price"style="color: indianred"><b>Total Price</b></p2></span>
             <span><button id="btn-checkout" type="button" onclick="populateCheckoutModal()" class="btn btn-primary cart-submission" data-toggle="modal" data-target="#CheckoutModal">Checkout</button></span>
         </div>
-        <!-- End Order Total and Check out -->
         <div><hr/></div>
 
-        <div class="row layout"><h3 class="secondary-display" style="font-weight: bold;cursor: pointer" data-toggle="modal" data-target="#HelpModalLong">Need Help?</h3></div>
-        <div class="row layout"><a href="https://secure.takealot.com/help#delivery" target="_blank" style="text-decoration : none"><h3 class="secondary-display" style="font-weight: bold">Shipping & Returns</h3></a></div>
-
-    </div> <!-- End Page Container -->
+        <div class="row layout"><h3 class="secondary" style="cursor: pointer" data-toggle="modal" data-target="#HelpModalLong"><b>Need Help?</b></h3></div>
+        <div class="row layout"><a href="#" target="_blank" style="text-decoration : none"><h3 class="secondary"><b>Shipping & Returns</b></h3></a></div>
+    </div>
 
     <script src="style/js/shoppingCart.js"></script>
     <script src="style/js/colourPalette.js"></script>
     <script src="style/js/addToCart.js"></script>
     <script src="style/js/orderDetails.js"></script>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script type="text/javascript">initialisePage();</script>
-    <!------------------------------------------------------------------------------------------------------------------------>
-    <!-- Add To Cart Modal -->
     <div class="modal fade" id="CartModalCenter" tabindex="-1" role="dialog" aria-labelledby="CartModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="main" id="CartModalLongTitle">Add the quantity of the item you have selected</h5>
+                    <h2 class="main">Please add the quantity of the item you have selected</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="row layout">
-                        <div class="col-6 col-sm-6"><p1 class="secondary-display" id="modal-colour-selection">Selected Colour</p1></div>
+                        <div class="col-6 col-sm-6"><p1 class="secondary" id="modal-colour-selection">Selected Colour</p1></div>
                         <div class="col-6 col-sm-6">
                             <div class="row">
-                                <div class="col-4 col-sm-4"><button onclick="decrementQuantity()" id="btn-minus"  type="button" class="btn btn-default btn-quantity" style="position: relative;left: -10px"></button></div>
-                                <div class="col-4 col-sm-4"><p1  id='add-quantity' class="secondary-display" style="position: relative;left: 10px;padding: 0px 5px 0px 5px">1</p1></div>
-                                <div class="col-4 col-sm-4"><button onclick="incrementQuantity()" id="btn-plus" type="button" class="btn btn-default btn-quantity" style="position: relative;left: -10px"></button></div>
+                                <div class="col-4 col-sm-4"><button onclick="decrementQuantity()" style="background-image: url('style/images/minus.jpg');" type="button" class="btn-default btn-quantity" style="position: relative;left: -10px"></button></div>
+                                <div class="col-4 col-sm-4"><p1  id='add-quantity' class="secondary" style="position: relative;left: 10px;padding: 0px 5px 0px 5px">0</p1></div>
+                                <div class="col-4 col-sm-4"><button onclick="incrementQuantity()" style="background-image: url('style/images/plus.jpg');" type="button" class="btn-default btn-quantity" style="position: relative;left: -10px"></button></div>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button id="quantity-accept" data-toggle="modal" data-target="#Continue-Checkout" onclick='addToOrder()' data-dismiss="modal" type="button" class="btn btn-success">Agree</button>
+                    <button id="qnty-accept" onclick='addToOrder()' data-dismiss="modal" type="button" class="btn btn-success">Agree</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="disableAddToCart()">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Checkout or Continue Shopping Modal -->
-    <div class="modal fade" id="Continue-Checkout" tabindex="-1" role="dialog" aria-labelledby="CartModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content smallModal ">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center main" id="Continue-CheckoutTitle">Thank you for your order!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row layout">
-                        <div  class="col-12 col-sm-12"><button id="continue-shopping" type="button" data-dismiss="modal" class="btn btn-primary cart-submission shopping-option">Continue Shopping</button></div>
-                    </div>
-                    <div class="row layout">
-                        <div class="col-12 col-sm-12"><button id="checkout" type="button" class="btn  btn-primary cart-submission shopping-option" data-toggle="modal" data-target="#CheckoutModal" onclick="populateCheckoutModal()" data-dismiss="modal">Checkout</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>  <!-- End Checkout or Continue Shopping Modal -->
-
-    <!-- Checkout Modal -->
     <div class="modal fade" id="CheckoutModal" tabindex="-1" role="dialog" aria-labelledby="CartModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-lg">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center main" id="CheckoutTitle" style="font-weight: bold">Your Shopping Cart</h5>
+                    <h5 class="modal-title text-center main" id="CheckoutTitle"><b>Your Shopping Cart</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -192,16 +186,16 @@
                 <div id="CheckoutModalBody" class="modal-body">
                     <div id="cart-summary-titles">
                         <div  class="row layout checkout-cart">
-                            <div class="col-5 col-sm-5"><h3 class="secondary-display" >Item</h3></div>
-                            <div class="col-2 col-sm-2"><h3 class="secondary-display" >Price</h3></div>
+                            <div class="col-5 col-sm-5"><h3 class="secondary" >Item</h3></div>
+                            <div class="col-2 col-sm-2"><h3 class="secondary" >Price</h3></div>
                             <div class="col-1 col-sm-1"></div>
-                            <div class="col-1 col-sm-1"><h3 class="secondary-display" >#</h3></div>
-                            <div class="col-3 col-sm-3"><h3 class="secondary-display" >Total</h3></div>
+                            <div class="col-1 col-sm-1"><h3 class="secondary" >#</h3></div>
+                            <div class="col-3 col-sm-3"><h3 class="secondary" >Total</h3></div>
                         </div>
                     </div>
                     <div><hr class="cartHR" style="border-color:#494648"></div>
 
-                    <div id="dynamicCartModal"> <!-- dynamically add elements to this modal -->
+                    <div id="dynamicCartModal">
 
                     </div>
             </div>
@@ -219,12 +213,8 @@
             </div>
         </div>
         </div>
-    </div>  <!-- End Continue Shopping Modal -->
+    </div>
 
-
-
-    <!-- Help Modal -->
-    <!-- Modal -->
     <div class="modal fade" id="HelpModalLong" tabindex="-1" role="dialog" aria-labelledby="HelpModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -236,31 +226,31 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-12 col-sm-12"><h2 class="secondary-display">Adding An Item To Your Order</h2></div>
+                        <div class="col-12 col-sm-12"><h2 class="secondary">Adding An Item To Your Order</h2></div>
                         <div class="col-4 col-sm-4"><p2> To add an item to your order, simply select the colour of your choice, and click the "<b>Add To Cart</b>" Button</p2></div>
                         <div id="help-colour-select" class="col-8 col-sm-8 help-image"></div>
                     </div>
                     <div><hr/></div>
                     <div class="row">
-                        <div class="col-12 col-sm-12 text-right" style="align-content: end"><h2 class="secondary-display">Select The Quantity</h2></div>
+                        <div class="col-12 col-sm-12 text-right" style="align-content: end"><h2 class="secondary">Select The Quantity</h2></div>
                         <div id="help-quantity" class="col-7 col-sm-7 help-image"></div>
                         <div class="col-5 col-sm-5"><p2>Select the quantity of the colour that you would like, & click the "<b>Accept</b>" Button to add it to your order.</p2></div>
                     </div>
                     <div><hr/></div>
                     <div class="row">
-                        <div class="col-12 col-sm-12"><h2 class="secondary-display">Your Order Details</h2></div>
+                        <div class="col-12 col-sm-12"><h2 class="secondary">Your Order Details</h2></div>
                         <div class="col-6 col-sm-6"><p2>The details of your order and total price are displayed at the bottom of the page, where you can checkout by clicking the "<b>Checkout</b>" Button</p2></div>
                         <div id="help-order-details" class="col-6 col-sm-6 help-image"></div>
                     </div>
                     <div><hr/></div>
                     <div class="row">
-                        <div class="col-12 col-sm-12 text-right"><h2 class="secondary-display">Removing An Item From Your Order</h2></div>
+                        <div class="col-12 col-sm-12 text-right"><h2 class="secondary">Removing An Item From Your Order</h2></div>
                         <div id="help-remove" class="col-6 col-sm-6 help-image"></div>
                         <div class="col-6 col-sm-6"><p2>To remove an item from your order, simply click the colour of the item you wish to remove in the Order Details section.</p2></div>
                     </div>
                     <div><hr/></div>
                     <div class="row">
-                        <div class="col-12 col-sm-12"><h2 class="secondary-display">Checkout</h2></div>
+                        <div class="col-12 col-sm-12"><h2 class="secondary">Checkout</h2></div>
                         <div class="col-6 col-sm-6"><p2>Once you are happy with your order, click the "<b>Checkout</b>" Button. A summary of your order will be displayed, where you can click "<b>Checkout</b>" Button to complete your order</p2></div>
                         <div id="help-checkout" class="col-6 col-sm-6 help-image"></div>
                     </div>
@@ -273,6 +263,6 @@
     </div>
 
 
-</div> <!-- End Entire Page Container-->
+</div>
 </body>
 </html>
