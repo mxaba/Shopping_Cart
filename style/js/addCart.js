@@ -3,7 +3,7 @@ function removeFocus() {
 }
 
 function enableAddToCart(){
-    if(document.getElementById('color-change').innerText !== 'Select A color'){
+    if(document.getElementById('change-color').innerText !== 'Select A color'){
         document.getElementById('add-to-cart').hidden = false;
         document.getElementById('btn-checkout').hidden = true;
     }
@@ -16,7 +16,7 @@ function enableAddToCart(){
 function disableAddCart(){
     document.getElementById('add-to-cart').hidden = true;
     document.getElementById('btn-checkout').hidden = false;
-    document.getElementById('color-change').innerText = 'Select A color';
+    document.getElementById('change-color').innerText = 'Select A color';
 }
 
 function increment(){

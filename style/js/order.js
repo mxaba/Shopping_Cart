@@ -35,7 +35,7 @@ function getOrderObject(findcolor){
 
 function addOrder() {
 
-    let itemcolor = document.getElementById('color-change').innerText;
+    let itemcolor = document.getElementById('change-color').innerText;
     let itemQuantity = parseInt(document.getElementById('add-quantity').innerText);
     let tempItemPrice = document.getElementById('discounted').innerText;
     let itemPrice = Number(tempItemPrice.slice(1, tempItemPrice.length));

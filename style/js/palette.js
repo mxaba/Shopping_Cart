@@ -18,6 +18,11 @@ const itemcolors = [
     'slategray'
 ];
 
+function updatePrice(value){
+    document.getElementById('discounted').innerText = '$' + getItemDetails().colors[getcolorName(value)].price;
+    document.getElementById('no-discount').innerText = '$' + calcDiscount(getItemDetails().colors[getcolorName(value)].price) +'.99';
+}
+
 function initialiseItemcolors(){
     let tempJson = getItemDetails();
     for(let i=0;i<itemcolors.length;i++){
@@ -29,26 +34,20 @@ function initialiseItemcolors(){
 
 }
 
+function colorSelected(){
+    document.getElementById('modal-color').innerText = document.getElementById('change-color').innerText;
+    document.getElementById('add-quantity').innerText = '0';
+}
+
 function getcolorPalette(){
     return itemcolors;
 }
 
 function colorChanger(value){
     console.log(value)
-    document.getElementById('color-change').innerText = value;
+    document.getElementById('change-color').innerText = value;
     updatePrice(value);
     enableAddToCart();
-}
-
-function colorSelected(){
-    document.getElementById('modal-color-selection').innerText = document.getElementById('color-change').innerText;
-    document.getElementById('add-quantity').innerText = '0';
-}
-
-
-function updatePrice(value){
-    document.getElementById('discounted').innerText = '$' + getItemDetails().colors[getcolorName(value)].price;
-    document.getElementById('no-discount').innerText = '$' + calcDiscount(getItemDetails().colors[getcolorName(value)].price) +'.99';
 }
 
 function calcDiscount(disPrice){
@@ -58,8 +57,8 @@ function calcDiscount(disPrice){
 $(document).ready(function(){
     $(".btn-circle").hover(function(){
         $(this).css("border", "#595959 2.5px solid");
-        $(this).css("opacity","54%");
-        $(this).css("filter"," brightness(65%)");
+        $(this).css("opacity","70%");
+        $(this).css("filter"," brightness(55%)");
     }, function(){
         if($(this).is(":focus")){
             $(this).css("opacity", '100%');

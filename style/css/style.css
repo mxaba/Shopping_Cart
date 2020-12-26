@@ -300,14 +300,13 @@ hr{
     padding-top: 20px;
 }
 
-.modal-footer .btn-success,.btn-danger{
-    border-color: darkgray;
-    color: black;
-    font-weight: bold;
+.modal-footer{
+    color: rgb(182, 129, 129);
 }
 
 .modal-body{
     margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .btn-quantity{
@@ -328,7 +327,7 @@ hr{
     font-size: 30px !important;
 }
 
-#modal-color-selection{
+#modal-color{
     font-size: 28px !important;
 }
 
