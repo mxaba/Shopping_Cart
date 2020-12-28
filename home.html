@@ -55,42 +55,42 @@
         <div class="container-color">
             <div class="row btn-row">
                 <div class="col-1 col-sm-1">
-                    <button id="btn_0" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_0" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_1" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_1" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_2" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_2" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_3" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_3" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_4" onclick="colorChanger(this.id)"  type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_4" onclick="colorItemChanger(this.id)"  type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_5" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_5" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_6" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_6" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_7" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_7" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_8" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_8" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_9" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_9" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_10" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_10" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
             </div>
 
             <div class="row btn-row">
                 <div class="col-1 col-sm-1">
-                    <button id="btn_11" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_11" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_12" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_12" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_13" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_13" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_14" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_14" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_15" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle  "></button></div>
+                    <button id="btn_15" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle  "></button></div>
                 <div class="col-1 col-sm-1">
-                    <button id="btn_16" onclick="colorChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
+                    <button id="btn_16" onclick="colorItemChanger(this.id)" type="button" class="btn-primary btn-circle "></button></div>
             </div>
         </div>
 
@@ -110,7 +110,7 @@
             </span>
             <span>
                 <button id="btn-checkout" type="button" onclick="populateCheckoutModal()" class="btn-primary cart-submission" data-toggle="modal" data-target="#CheckoutModal">Checkout</button>
-                <button id="add-to-cart" onclick="colorSelected()" type="button" class="btn-primary cart-submission" data-toggle="modal" data-target="#CartModalCenter">Add To Cart</button>
+                <button id="add-to-cart" onclick="colorItemSelected()" type="button" class="btn-primary cart-submission" data-toggle="modal" data-target="#CartModalCenter">Add To Cart</button>
             </span>
         </div> 
 
@@ -206,7 +206,7 @@
 
                 <div class="row layout checkout-cart">
                     <div class="col-6 col-sm-6"><button type="button" data-dismiss="modal" class="btn btn-primary cart-submission cart-summary">Continue Shopping</button></div>
-                    <div class="col-6 col-sm-6"><button type="button" class="btn  btn-primary cart-submission cart-summary" onclick="reloadPage()">Checkout</button></div>
+                    <div class="col-6 col-sm-6"><button type="button" class="btn  btn-primary cart-submission cart-summary" onclick="refresh()">Checkout</button></div>
                 </div>
             </div>
         </div>

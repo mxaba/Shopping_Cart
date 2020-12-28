@@ -1,8 +1,4 @@
-function removeFocus() {
-    document.getElementById('add-to-cart').focusout()
-}
-
-function enableAddToCart(){
+function enableAddCart(){
     if(document.getElementById('change-color').innerText !== 'Select A color'){
         document.getElementById('add-to-cart').hidden = false;
         document.getElementById('btn-checkout').hidden = true;

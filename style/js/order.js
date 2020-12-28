@@ -110,8 +110,8 @@ function setQuantity(){
 }
 
 function getcolorName(toFind){
-    let tempcolorList = getItemDetails();
-    let tempcolorPalette = getcolorPalette();
+    let tempcolorList = getColorItem();
+    let tempcolorPalette = getColorItem();
     for(let i=0;i<tempcolorPalette.length;i++){
         if(toFind === tempcolorList.colors[tempcolorPalette[i]]['display-name']){
             return tempcolorPalette[i]
@@ -139,27 +139,27 @@ function populateCheckoutModal(){
 
             let row = document.createElement("div");
             row.className = 'row';
-            let itemDetailsOne = document.createElement("div");
-            itemDetailsOne.className = 'col-2 col-sm-2';
+            let colorItemOne = document.createElement("div");
+            colorItemOne.className = 'col-2 col-sm-2';
             let btnItem = document.createElement('button');
             btnItem.className = 'btn btn-primary btn-circle btn-cart';
             btnItem.type = 'button';
             btnItem.disabled = true;
             btnItem.style.backgroundColor = getcolorName(orderDetails[i].color);
-            itemDetailsOne.appendChild(btnItem);
-            let itemDetailsTwo = document.createElement("div");
-            itemDetailsTwo.className = 'col-8 col-sm-8';
+            colorItemOne.appendChild(btnItem);
+            let colorItemTwo = document.createElement("div");
+            colorItemTwo.className = 'col-8 col-sm-8';
             let itemcolor = document.createElement('h3');
             itemcolor.className = 'secondary cart-display';
             itemcolor.innerText = orderDetails[i].color;
-            itemDetailsTwo.appendChild(itemcolor);
+            colorItemTwo.appendChild(itemcolor);
 
-            let itemDetailsThree = document.createElement("div");
-            itemDetailsThree.className = 'col-2 col-sm-2';
+            let colorItemThree = document.createElement("div");
+            colorItemThree.className = 'col-2 col-sm-2';
 
-            row.appendChild(itemDetailsOne);
-            row.appendChild(itemDetailsTwo);
-            row.appendChild(itemDetailsThree);
+            row.appendChild(colorItemOne);
+            row.appendChild(colorItemTwo);
+            row.appendChild(colorItemThree);
 
             itemCol.appendChild(row);
             rowDiv.appendChild(itemCol);
@@ -200,7 +200,7 @@ function populateCheckoutModal(){
 
 function deleteBtn(value){
     console.log(value.id);
-    let tempList = itemDetails;
+    let tempList = colorItem;
 
     let colorDel = value.id;
     for(let i=0;i<orderDetails.length;i++){
@@ -221,7 +221,7 @@ function deleteBtn(value){
 }
 
 function getDisplayName(colorCode){
-    let tempList = itemDetails;
+    let tempList = colorItem;
     let DisplayName = tempList.colors[colorCode]['display-name'];
     return DisplayName;
 }

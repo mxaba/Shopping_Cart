@@ -1,9 +1,9 @@
-const itemDetails = {
+const colorItem = {
     "itemName": "HICKIES Originals",
     "itemRating": "1,293 Reviews",
-    "discountedPrice": 14.99,
-    "actualPrice": 19.99,
-    "discountValue": "25% OFF",
+    "discounted": 14.99,
+    "realPrice": 19.99,
+    "discountPecentage": "25% OFF",
     "colors": {
         "yellowgreen": {
             "display-name": "Yellowgreen",
@@ -76,37 +76,37 @@ const itemDetails = {
     }
 };
 
-function getItemDetails() {
-    return itemDetails;
+function getColorItem() {
+    return colorItem;
 }
 
 function initialisePrices(){
     let itemPrice = document.getElementById('discounted');
-    let itemActualPrice = document.getElementById('no-discount');
+    let itemrealPrice = document.getElementById('no-discount');
     let itemDiscount = document.getElementById('discount');
 
-    itemPrice.innerText = '$' + getPrice();
-    itemActualPrice.innerText = '$' + getActPrice();
-    itemDiscount.innerText = getDiscount();
+    itemPrice.innerText = '$' + getDiscountedPrice();
+    itemrealPrice.innerText = '$' + getRealPrice();
+    itemDiscount.innerText = getDiscountPecentage();
     
-    initialiseItemcolors()
+    initialiseColors()
 
 }
 
 
-function getPrice(){
-    return itemDetails['discountedPrice']
+function getDiscountedPrice(){
+    return colorItem['discounted']
 }
 
-function getActPrice(){
-    return itemDetails['actualPrice']
+function getRealPrice(){
+    return colorItem['realPrice']
 }
 
-function getDiscount(){
-    return itemDetails['discountValue']
+function getDiscountPecentage(){
+    return colorItem['discountPecentage']
 }
 
-function reloadPage(){
+function refresh(){
     alert("See you on your next Shopping!");
     location.reload();
 }
