@@ -122,18 +122,26 @@
         <div id='dynamic-row' class="row row-order"></div>
 
         <div id="total-order" class="row layout" style="display: none">
-            <span> <p1 class="main" style="color: black; padding-left:0px"><b>Total:</b></p1></span>
-            <span> <p2 class="main" id="total-price"style="color: rgb(194, 79, 79)"></p2></span>
+            <span> 
+                <p1 class="main" style="color: black; padding-left:0px"><b>Total:</b></p1>
+            </span>
+            <span> 
+                <p2 class="main" id="total-price"style="color: rgb(194, 79, 79)"></p2>
+            </span>
         </div>
         <div><hr/></div>
 
-        <div class="row layout"><h3 class="secondary" style="cursor: pointer" data-toggle="modal" data-target="#HelpModal"><b>Need Help?</b></h3></div>
-        <div class="row layout"><a href="#" target="_blank" style="text-decoration : none"><h3 class="secondary"><b>Shipping & Returns</b></h3></a></div>
+        <div class="row layout">
+            <h3 class="secondary" style="cursor: pointer" data-toggle="modal" data-target="#HelpModal"><b>Need Help?</b></h3>
+        </div>
+        <div class="row layout"><a href="#" target="_blank" style="text-decoration : none">
+            <h3 class="secondary"><b>Shipping & Returns</b></h3>
+        </a></div>
     </div>
 
     <script src="style/js/cart.js"></script>
     <script src="style/js/palette.js"></script>
-    <script src="style/js/addCart.js"></script>
+    <script src="style/js/cartColor.js"></script>
     <script src="style/js/order.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -152,12 +160,20 @@
                 </div>
                 <div class="modal-body">
                     <div class="row layout">
-                        <div class="col-6 col-sm-6"><p1 class="secondary" id="modal-color">Selected color</p1></div>
+                        <div class="col-6 col-sm-6">
+                            <p1 class="secondary" id="modal-color">Selected color</p1>
+                        </div>
                         <div class="col-6 col-sm-6">
                             <div class="row">
-                                <div class="col-4 col-sm-4"><button onclick="decrement()" style="background-image: url('style/images/minus.jpg');" type="button" class="btn-quantity" style="position: relative; left: -12px"></button></div>
-                                <div class="col-4 col-sm-4"><p1  id='add-quantity' class="secondary" style="position: relative;left: 10px;padding: 0px 5px 0px 5px">0</p1></div>
-                                <div class="col-4 col-sm-4"><button onclick="increment()" style="background-image: url('style/images/plus.jpg');" type="button" class="btn-quantity" style="position: relative; left: -12px"></button></div>
+                                <div class="col-4 col-sm-4">
+                                    <button onclick="decrement()" style="background-image: url('style/images/minus.jpg');" type="button" class="btn-quantity" style="position: relative; left: -12px"></button>
+                                </div>
+                                <div class="col-4 col-sm-4">
+                                    <p1  id='add-quantity' class="secondary" style="position: relative;left: 10px;padding: 0px 5px 0px 5px">0</p1>
+                                </div>
+                                <div class="col-4 col-sm-4">
+                                    <button onclick="increment()" style="background-image: url('style/images/plus.jpg');" type="button" class="btn-quantity" style="position: relative; left: -12px"></button>
+                                </div>
                             </div>
                         </div>
 
@@ -191,7 +207,9 @@
                             <div class="col-3 col-sm-3"><h3 class="secondary" >Total</h3></div>
                         </div>
                     </div>
-                    <div><hr class="cartHR" style="border-color:#494648"></div>
+                    <div>
+                        <hr class="cartHR" style="border-color:#494648">
+                    </div>
 
                     <div id="dynamicCartModal">
 
@@ -201,12 +219,18 @@
             <div class="modal-body">
                 <div class="row layout" style="margin-top: -40px">
                     <div class="col-9 col-sm-9"></div>
-                    <div class="col-3 col-sm-3"><h3 id="cartTotal" style="font-weight: bold;color: indianred;font-size: 25px;position: relative;left:-20px" >Total</h3></div>
+                    <div class="col-3 col-sm-3">
+                        <h3 id="cartTotal" style="font-weight: bold;color: indianred;font-size: 25px;position: relative;left:-20px" >Total</h3>
+                    </div>
                 </div>
 
                 <div class="row layout checkout-cart">
-                    <div class="col-6 col-sm-6"><button type="button" data-dismiss="modal" class="btn btn-primary cart-submission cart-summary">Continue Shopping</button></div>
-                    <div class="col-6 col-sm-6"><button type="button" class="btn  btn-primary cart-submission cart-summary" onclick="refresh()">Checkout</button></div>
+                    <div class="col-6 col-sm-6">
+                        <button type="button" data-dismiss="modal" class="btn btn-primary cart-submission cart-summary">Continue Shopping</button>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <button type="button" class="btn  btn-primary cart-submission cart-summary" onclick="refresh()">Checkout</button>
+                    </div>
                 </div>
             </div>
         </div>
