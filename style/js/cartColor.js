@@ -85,8 +85,8 @@ function initialisePrices(){
     let itemrealPrice = document.getElementById('no-discount');
     let itemDiscount = document.getElementById('discount');
 
-    itemPrice.innerText = '$' + getDiscountedPrice();
-    itemrealPrice.innerText = '$' + getRealPrice();
+    itemPrice.innerText = 'R' + getDiscountedPrice();
+    itemrealPrice.innerText = 'R' + getRealPrice();
     itemDiscount.innerText = getDiscountPecentage();
     
     initialiseColors()

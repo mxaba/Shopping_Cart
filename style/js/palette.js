@@ -19,8 +19,8 @@ const colors = [
 ];
 
 function updateItemPrice(value){
-    document.getElementById('discounted').innerText = '$' + getColorItem().colors[getcolorName(value)].price;
-    document.getElementById('no-discount').innerText = '$' + calculateDiscount(getColorItem().colors[getcolorName(value)].price) + '.99';
+    document.getElementById('discounted').innerText = 'R' + getColorItem().colors[getcolorName(value)].price;
+    document.getElementById('no-discount').innerText = 'R' + calculateDiscount(getColorItem().colors[getcolorName(value)].price) + '.99';
 }
 
 function initialiseColors(){
