@@ -70,7 +70,7 @@ function updateTotal(price,quantity){
         console.log("No Items In Order");
     }
     else{
-        document.getElementById('total-price').innerText = 'R'+ (OrderTotal += (price*quantity)).toFixed(2);
+        document.getElementById('total-price').innerText = '$'+ (OrderTotal += (price*quantity)).toFixed(2);
         document.getElementById('total-order').style.display = 'inline-block'; 
     }
 }
@@ -167,7 +167,7 @@ function populateCheckoutModal(){
             itemPrice.className = 'col-2 col-sm-2';
             let price = document.createElement('h3');
             price.className = 'secondary cart-display';
-            price.innerText = 'R' + orderDetails[i].price;
+            price.innerText = '$' + orderDetails[i].price;
             itemPrice.appendChild(price);
             rowDiv.appendChild(itemPrice);
             let whiteSpace = document.createElement("div");
@@ -186,7 +186,7 @@ function populateCheckoutModal(){
             let total = document.createElement('h3');
             total.className = 'secondary cart-display';
             total.style.paddingTop = '2px';
-            total.innerText = 'R' + (orderDetails[i].quantity * orderDetails[i].price).toFixed(2);
+            total.innerText = '$' + (orderDetails[i].quantity * orderDetails[i].price).toFixed(2);
             itemTotal.appendChild(total);
             rowDiv.appendChild(itemTotal);
             document.getElementById('dynamicCartModal').appendChild(rowDiv);
@@ -229,7 +229,7 @@ function getDisplayName(colorCode){
 function checkTotal(){
     let total = document.getElementById('total-price').innerText;
 
-    if((total == 'R-0.00') || (total == 'R0.00')){
+    if((total == '$-0.00') || (total == '$0.00')){
         document.getElementById('total-order').style.display = 'none';
     }
 }
